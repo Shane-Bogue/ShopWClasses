@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Fox';
+    src: url('/Fonts/FoxAndBower.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sonora';
+    src: url('/Fonts/Sonorous-Rough.otf') format('opentype');
+}
+
+:root {
+--foo: #efefef;
+--bar: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fox', sans-serif;
+    text-align: center;
+    user-select: none;
+    /*font-family: 'Sonora', sans-serif;*/
+}
+
+header {
+    /* This Element*/
+    padding: 2vw;
+    text-align: center;
+    font-size: 2rem;
+    /* Inner Elements*/
+
+}
+
+main {
+    /* This Element*/
+    padding: 2vw;
+    /* Inner Elements*/
+
+}
+
+article {
+    /* This Element*/
+
+    /* Inner Elements*/
+    
+}
+
+footer {
+    /* This Element*/
+
+    /* Inner Elements*/
+    
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4vw;
+}
+
+#products div {
+    background-color: #333;
+    color: white;
+    border-radius: 1rem;
+    padding-inline: 1vw;
+    transition: .25s;
+}
+
+#products div:hover {
+    background-color: rgb(1, 99, 31);
+}
+
+#products div p {
+    margin-block: 1vw;
+}
+
+#productCart {
+    margin-inline: 2vw;
+    font-size: 2rem;
+}
+
+#productCart div {
+    margin-inline: auto;
+    width: fit-content;
+    margin-block: 2vw;
+    transition: .25s;
+    position: relative;
+}
+
+#productCart div::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: .2rem;
+    background: #960000;
+
+  }
+
+  #productCart div:hover::after{
+    animation-name: strike;
+    animation-duration: .25s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+  }
+
+#productCart div:hover {
+    transform: scale(1.05);
+    color: #960000;
+}
+
+@keyframes strike{
+    0%   { width : 0; }
+    100% { width: 100%; }
+}
+
+
+
+.💪 {  /* Flex */
+    display: flex;
+}
+
+.🔎 {  /* Search Bar */
+}
+
+.⚪ {  /* Logo */
+}
+
+.🧭 { /* Navigation */
+}
+
+.📍 {  /* Navigation Elements */
+}
+
+.📌 { /* PLACEHOLDER */
+}
+
+.🔻 {  /* PLACEHOLDER */
+}
+
+.🔳 {  /* PLACEHOLDER */
+}
+
+.⬜ {
+}
+
+@keyframes buzz {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media only screen and (max-width: 800px) {
+  }
